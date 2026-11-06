@@ -1,0 +1,15 @@
+# Dependencies for fine-tuning on a local GPU.
+# On Google Colab these are installed automatically by the notebook cells.
+# Install with: pip install -r requirements-training.txt
+#
+# Note: torch is listed without a version pin so pip selects the build
+# appropriate for your CUDA version. Visit https://pytorch.org/get-started/locally/
+# to get the correct install command for your system if the default build
+# does not match your CUDA toolkit.
+torch
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+datasets>=2.14.0
+transformers>=4.40.0
+trl>=0.8.0
+accelerate>=0.29.0
+bitsandbytes>=0.43.0
