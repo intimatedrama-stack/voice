@@ -1,0 +1,9 @@
+# Dependencies for local scripts (parsing, formatting, and testing)
+# Python 3.9+
+#
+# The parsing and formatting scripts (parse_google_voice_export.py,
+# format_for_finetune.py) use only the Python standard library and
+# require no additional packages.
+#
+# The test script (test_bria_ai.py) requires the OpenAI client:
+openai>=1.0.0

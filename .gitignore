@@ -1,0 +1,29 @@
+# Ignore raw HTML exports and logs
+Calls/*.html
+Spam/*.html
+*.log
+
+# Ignore media/attachment files (jpg, amr, 3gp)
+**/*.jpg
+**/*.amr
+**/*.3gp
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Keep essential files
+!Calls/training_output/training_chat_finetune.jsonl
+!Calls/scripts/*.py
+!Calls/scripts/*.ps1
+!Calls/training_output/*.jsonl
+!Calls/training_output/summary.json
+!Phones.vcf
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+train_env/
+results/checkpoint-*/
